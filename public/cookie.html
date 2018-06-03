@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<button id="btn">Create Cookies</button>
+
+<script type="text/javascript">
+let btn = document.querySelector('#btn')
+btn.addEventListener('click', ()=>{ //or ;{Max-Age=900000} for expire
+  document.cookie = "username=John;{expires=01 Jan 2019 00:00:00 UTC}"
+  alert("cookie created")
+})
+</script>
+</body>
+</html>
