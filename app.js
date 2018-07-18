@@ -23,10 +23,7 @@ app.post('/login', (req, res)=>{
   res.cookie('username', username, {maxAge: 90000})
   return res.redirect('/login')
 })
-// set
-// res.cookies
-// get
-// req.cookies
+
 
 app.listen(POST, ()=>{
   console.log('Server running...')
